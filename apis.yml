@@ -1,8 +1,24 @@
 aid: careforce
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/careforce.png
 name: Careforce
-description: 'Careforce is a company surfaced as a portfolio company of crv and added to the API Evangelist
-  network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Careforce (Helpcare AI, Inc., d/b/a Careforce) provides an autonomous AI workforce
+  platform for healthcare operations. Its AI agents — Angelica, a care coordinator handling
+  preventive-care outreach, appointment scheduling, reminders, and referral management, and David,
+  a data analyst that pulls and analyzes patient data across EHR and portal systems — integrate with
+  30+ healthcare platforms including Epic, Cerner, Athenahealth, and NextGen to close care gaps and
+  reduce staff workload. Backed by CRV. Careforce consumes third-party healthcare APIs rather than
+  publishing a public developer API; no public developer portal, OpenAPI, or SDKs were found.'
 url: https://raw.githubusercontent.com/api-evangelist/careforce/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- AI
+- Agents
+- Care Coordination
+- Automation
+- EHR Integration
+- Patient Outreach
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/careforce-domain-security.yml
 - type: Website
   url: https://careforce.ai/
+- type: Blog
+  url: https://careforce.ai/blog
+- type: PrivacyPolicy
+  url: https://careforce.ai/privacy
+- type: TermsOfService
+  url: https://careforce.ai/terms
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
